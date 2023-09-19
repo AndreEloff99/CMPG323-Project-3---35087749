@@ -3,7 +3,7 @@ using Models;
 
 namespace EcoPower_Logistics.Repository
 {
-    public class ProductRepository
+    public class ProductRepository : GenericRepository<Product>, IProductService
     {
         protected readonly SuperStoreContext _context = new SuperStoreContext();
 

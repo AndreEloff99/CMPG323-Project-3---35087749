@@ -1,9 +1,10 @@
-﻿using Data;
+﻿using Controllers;
+using Data;
 using Models;
 
 namespace EcoPower_Logistics.Repository
 {
-    public class CustomerRepository
+    public class CustomerRepository : GenericRepository<Customer>, ICustomerService
     {
         protected readonly SuperStoreContext _context = new SuperStoreContext();
 

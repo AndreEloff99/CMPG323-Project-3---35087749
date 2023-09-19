@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Models;
 using Data;
+using EcoPower_Logistics.Repository;
 
 namespace Controllers
 {
@@ -18,7 +19,7 @@ namespace Controllers
 
         public OrdersController(SuperStoreContext context)
         {
-            _context = context;
+             _context = context;
         }
 
         // GET: Orders
@@ -26,6 +27,7 @@ namespace Controllers
         {
             var superStoreContext = _context.Orders.Include(o => o.Customer);
             return View(await superStoreContext.ToListAsync());
+ 
         }
 
         // GET: Orders/Details/5
