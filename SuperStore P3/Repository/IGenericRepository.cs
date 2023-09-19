@@ -12,4 +12,5 @@ namespace EcoPower_Logistics.Repository
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
     }
+
 }

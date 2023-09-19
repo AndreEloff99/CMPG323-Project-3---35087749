@@ -38,5 +38,6 @@ namespace EcoPower_Logistics.Repository
         {
             _context.Set<T>().RemoveRange(entities);
         }
-
     }
+
+}
