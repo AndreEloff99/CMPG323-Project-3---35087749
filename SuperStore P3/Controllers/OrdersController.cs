@@ -16,19 +16,33 @@ namespace Controllers
     public class OrdersController : Controller
     {
         private readonly SuperStoreContext _context;
+        private readonly IOrderService _orderRepository;
 
         public OrdersController(SuperStoreContext context)
         {
              _context = context;
         }
 
-        // GET: Orders
+
+        public OrdersController(IOrderService OrderRepository)
+        {
+            _orderRepository = OrderRepository;
+        }
+
+        // GET: Services
         public async Task<IActionResult> Index()
         {
-            var superStoreContext = _context.Orders.Include(o => o.Customer);
-            return View(await superStoreContext.ToListAsync());
- 
+            return View(_orderRepository.GetAll());
         }
+
+
+        // GET: Orders
+       // public async Task<IActionResult> Index()
+       // {
+       //     var superStoreContext = _context.Orders.Include(o => o.Customer);
+        //    return View(await superStoreContext.ToListAsync());
+ 
+       // }
 
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)
