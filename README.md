@@ -7,3 +7,4 @@ Burndown chart:
 ![image](https://github.com/AndreEloff99/CMPG323-Project-3---35087749/assets/88395754/70220895-5d60-4026-9c40-407e9dff4abc)
 
 
+References are found in the refernces.txt
