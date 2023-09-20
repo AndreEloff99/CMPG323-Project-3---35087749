@@ -1,6 +1,6 @@
 ﻿namespace EcoPower_Logistics.Repository
 {
-    public interface IProductService
+    public interface IProductService : IGenericRepository<ProductRepository>
     {
         ProductRepository GetProductRepository();
     }

@@ -16,19 +16,35 @@ namespace Controllers
     public class ProductsController : Controller
     {
         private readonly SuperStoreContext _context;
+        private readonly IProductService _productRepository;
 
         public ProductsController(SuperStoreContext context)
         {
             _context = context;
         }
 
-        // GET: Products
+
+        public ProductsController(IProductService ProductRepository)
+        {
+            _productRepository = ProductRepository;
+        }
+
+        // GET: Services
         public async Task<IActionResult> Index()
         {
-            return _context.Products != null ?
-                        View(await _context.Products.ToListAsync()) :
-                        Problem("Entity set 'SuperStoreContext.Products'  is null.");
+            return View(_productRepository.GetAll());
         }
+
+
+
+
+        // GET: Products
+       // public async Task<IActionResult> Index()
+       // {
+        //    return _context.Products != null ?
+        //                View(await _context.Products.ToListAsync()) :
+        //                Problem("Entity set 'SuperStoreContext.Products'  is null.");
+        //}
 
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
