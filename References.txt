@@ -1,0 +1,11 @@
+Microsoft. (2023). Tutorial: Get started with C# and ASP.NET Core in Visual Studio. [Online]. Available at: https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022 (Accessed: 19 September 2023).
+
+‌Microsoft. (2023). ASP.NET MVC Overview. [Online]. Available at: https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/asp-net-mvc-overview (Accessed: 20 September 2023).
+
+C# Corner. (2023). Design Patterns In C# .NET (2023). [Online]. Available at: https://www.c-sharpcorner.com/UploadFile/bd5be5/design-patterns-in-net/ (Accessed: 20 September 2023).
+
+
+C# Corner. (2012). Architectural Patterns in .NET. [Online]. Available at: https://www.c-sharpcorner.com/uploadfile/babu_2082/architectural-patterns-in-net/ (Accessed: 20 September 2023).
+
+
+Microsoft. (2023). Compile and build in Visual Studio. [Online]. Available at: https://learn.microsoft.com/en-us/visualstudio/ide/compiling-and-building-in-visual-studio?view=vs-2022 (Accessed: 20 September 2023).
