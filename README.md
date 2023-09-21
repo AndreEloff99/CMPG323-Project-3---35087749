@@ -18,3 +18,8 @@ password = JesusIsKing#1
 if details is needed
 
 Project 3 url:https://github.com/users/AndreEloff99/projects/8
+
+
+Azure Links and needs: The 2 Lectures are added as Co-Administrators to my subscription.
+
+Link to resource group: https://portal.azure.com/#@nwuac.onmicrosoft.com/resource/subscriptions/36114890-0c86-4d44-b68a-77eb6f5c9c11/resourceGroups/rgProject3-35087749/overview
