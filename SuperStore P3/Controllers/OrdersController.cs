@@ -37,12 +37,12 @@ namespace Controllers
 
 
         // GET: Orders
-       // public async Task<IActionResult> Index()
-       // {
-       //     var superStoreContext = _context.Orders.Include(o => o.Customer);
-        //    return View(await superStoreContext.ToListAsync());
+    //    public async Task<IActionResult> Index()
+    //    {
+    //        var superStoreContext = _context.Orders.Include(o => o.Customer);
+    //        return View(await superStoreContext.ToListAsync());
  
-       // }
+    //    }
 
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)
