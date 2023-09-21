@@ -2,6 +2,6 @@
 {
     public interface IOrderService : IGenericRepository<OrderRepository>
     {
-        OrderRepository GetOrderRepository();
+        OrderRepository GetAll();
     }
 }

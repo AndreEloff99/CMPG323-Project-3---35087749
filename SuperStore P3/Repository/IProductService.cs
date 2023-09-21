@@ -2,6 +2,6 @@
 {
     public interface IProductService : IGenericRepository<ProductRepository>
     {
-        ProductRepository GetProductRepository();
+        ProductRepository GetAll();
     }
 }
